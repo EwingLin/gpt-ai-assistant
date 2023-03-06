@@ -41,7 +41,6 @@ const createTextCompletion = ({
   prompt,
   temperature = config.OPENAI_COMPLETION_TEMPERATURE,
   maxTokens = config.OPENAI_COMPLETION_MAX_TOKENS,
-  top_p=1,
   frequencyPenalty = config.OPENAI_COMPLETION_FREQUENCY_PENALTY,
   presencePenalty = config.OPENAI_COMPLETION_PRESENCE_PENALTY,
   stop = [
@@ -53,7 +52,6 @@ const createTextCompletion = ({
   prompt,
   temperature,
   max_tokens: maxTokens,
-  top_p=1,
   frequency_penalty: frequencyPenalty,
   presence_penalty: presencePenalty,
   stop,
